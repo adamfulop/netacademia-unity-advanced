@@ -4,8 +4,8 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
 using WonderGame.Game;
+using WonderGame.HighScores;
 using WonderGame.UI.Common;
-using WonderGame.UI.HighScores;
 
 namespace WonderGame.UI.Game {
     public class EnterNameUIWindow : UIWindow {

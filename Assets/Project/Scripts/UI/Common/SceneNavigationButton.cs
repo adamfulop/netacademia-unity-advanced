@@ -2,6 +2,8 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using WonderGame.Common;
+using Zenject;
+#pragma warning disable 649
 
 namespace WonderGame.UI.Common {
     public class SceneNavigationButton : MonoBehaviour {
@@ -9,11 +11,7 @@ namespace WonderGame.UI.Common {
         [SerializeField] private string _loadingSceneName;
         [SerializeField] private string _targetSceneName;
     
-        private Button _button;    // a Button komponens (ugyanarról a GameObjectről)
-
-        private void Awake() {
-            _button = GetComponent<Button>();
-        }
+        [Inject] private Button _button;    // a Button komponens (ugyanarról a GameObjectről)
 
         private void Start() {
             // a gomb kattintás eseményre feliratkozunk az absztrakt OnClick metódussal, a metódust majd a leszármazott osztály implementálja

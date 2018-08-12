@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace WonderGame.UI.Common {
     public abstract class ButtonBehaviour<T> : MonoBehaviour where T : Object {
-        private Button _button;    // a Button komponens (ugyanarról a GameObjectről)
+        [Inject] private Button _button;    // a Button komponens (ugyanarról a GameObjectről)
         protected T Controller;    // referencia a controllerre (T típusú, UnityGame.Object leszármazott)
 
         private void Awake() {
-            _button = GetComponent<Button>();
             Controller = FindObjectOfType<T>();
         }
 
