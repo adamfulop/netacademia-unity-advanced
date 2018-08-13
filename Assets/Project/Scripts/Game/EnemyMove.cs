@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using WonderGame.Common;
+using Zenject;
+#pragma warning disable 649
 
 namespace WonderGame.Game {
     public class EnemyMove : MonoBehaviour {
-        private NavMeshAgent _navMeshAgent;
-        private Transform _player;
-
-        private void Awake() {
-            _navMeshAgent = GetComponent<NavMeshAgent>();
-            _player = GameObject.FindGameObjectWithTag("Player").transform;
-        }
+        [Inject] private NavMeshAgent _navMeshAgent;
+        [Inject(Id = "Player")] private Transform _player;
+        [Inject] private readonly PlayerInventory _playerInventory;
     
         private void Start() {
             var gameSettingsManager = FindObjectOfType<GameSettingsManager>();
@@ -27,8 +25,8 @@ namespace WonderGame.Game {
             // ha elkapott egy játékost (= ütközött egy játékos taggel rendelkező colliderrel)
             // a játékostól elveszünk egy pontot
             if (other.CompareTag("Player")) {
-                if (other.gameObject.GetComponent<PlayerInventory>().PickupCount > 0)
-                    other.gameObject.GetComponent<PlayerInventory>().PickupCount--;
+                if (_playerInventory.PickupCount > 0)
+                    _playerInventory.PickupCount--;
                 Debug.Log("Zombie elkapta a játékost!");
             }
         }

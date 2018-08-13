@@ -1,17 +1,17 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Newtonsoft.Json;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using WonderGame.Game;
 using WonderGame.HighScores;
 using WonderGame.UI.Common;
+using Zenject;
 
 namespace WonderGame.UI.Game {
     public class EnterNameUIWindow : UIWindow {
         [SerializeField] private Text _scoreText;
         [SerializeField] private InputField _nameInputField;
         [SerializeField] private GameState _gameState;
+
+        [Inject] private readonly HighScoresController _highScoresController;
 
         private bool _isShown;
         private int _score;
@@ -34,14 +34,7 @@ namespace WonderGame.UI.Game {
 
             // ha nem üres string a játékos neve, akkor létrehozunk egy bejegyzést a high scores listába
             if (!string.IsNullOrEmpty(playerName) && _score != 0) {
-                var newRecord = new ScoreRecord {Name = playerName, Score = _score};
-                var highScores = JsonConvert.DeserializeObject<List<ScoreRecord>>(PlayerPrefs.GetString("highScores", "[]"));
-                highScores.Add(newRecord);
-                highScores = highScores
-                    .OrderByDescending(r => r.Score)
-                    .ToList();
-
-                PlayerPrefs.SetString("highScores", JsonConvert.SerializeObject(highScores));
+                _highScoresController.AddHighScore(playerName, _score);
             } 
         }
     }

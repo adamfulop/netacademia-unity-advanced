@@ -546,9 +546,11 @@
               <e p="UIPoints.cs" t="Include" />
             </e>
             <e p="HighScores" t="Include">
+              <e p="HighScoresController.cs" t="Include" />
               <e p="HighScoresInstaller.cs" t="Include" />
               <e p="HighScoresSettings.cs" t="Include" />
               <e p="HighScoresUIController.cs" t="Include" />
+              <e p="HighScoresUIInstaller.cs" t="Include" />
               <e p="ScoreRecord.cs" t="Include" />
               <e p="UIScoreRecord.cs" t="Include" />
             </e>

@@ -146,7 +146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000027515822}
+  m_AnchoredPosition: {x: 0, y: -0.000061009898}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &39136408
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 952406811}
   m_HandleRect: {fileID: 952406810}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1253,6 +1253,7 @@ GameObject:
   - component: {fileID: 2077913962}
   - component: {fileID: 2077913961}
   - component: {fileID: 2077913963}
+  - component: {fileID: 2077913964}
   m_Layer: 0
   m_Name: Scene Context
   m_TagString: Untagged
@@ -1273,6 +1274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _installers:
   - {fileID: 2077913963}
+  - {fileID: 2077913964}
   _installerPrefabs: []
   _scriptableObjectInstallers: []
   _autoRun: 1
@@ -1301,5 +1303,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09fc3a4121bb43d9bd9630e7252d29aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2077913964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077913960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0f3614bdf34441a087679d7fe65388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
