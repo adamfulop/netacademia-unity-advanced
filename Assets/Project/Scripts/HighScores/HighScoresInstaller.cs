@@ -4,7 +4,7 @@
 namespace WonderGame.HighScores {
     public class HighScoresInstaller : MonoInstaller<HighScoresInstaller> {
         public override void InstallBindings() {
-            Container.BindInterfacesAndSelfTo<HighScoresController>().AsSingle();
+            Container.BindInterfacesAndSelfTo<HighScoresController>().AsSingle();    // Singleton osztály
         }
     }
 }

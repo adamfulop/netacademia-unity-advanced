@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Adam\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_NetAcademia - Unity Advanced.-2005490750.00" t="ExcludeRecursive" />
+    <e p="\312bce52" t="IncludeRecursive" />
+    <e p="\app" t="IncludeRecursive" />
+    <e p="C:\Users\Adam\.Rider2018.2\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Adam\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Adam\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Adam\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_NetAcademia - Unity Advanced.-2005490750.00" t="ExcludeRecursive" />
     <e p="D:\Dev\Unity\NetAcademia - Unity Advanced" t="IncludeRecursive">
       <e p="Assets" t="Include">
         <e p="Plugins" t="Include">
@@ -188,6 +193,7 @@
                   <e p="SceneParentAutomaticLoader.cs" t="Include" />
                 </e>
                 <e p="UnityInspectorListEditor.cs" t="Include" />
+                <e p="Zenject-Editor.asmdef" t="Include" />
                 <e p="ZenMenuItems.cs" t="Include" />
                 <e p="ZenUnityEditorUtil.cs" t="Include" />
               </e>
@@ -374,6 +380,7 @@
               </e>
             </e>
             <e p="Version.txt" t="Include" />
+            <e p="Zenject.asmdef" t="Include" />
           </e>
         </e>
         <e p="PostProcessing" t="Include">
@@ -405,6 +412,7 @@
               <e p="VectorscopeMonitor.cs" t="Include" />
               <e p="WaveformMonitor.cs" t="Include" />
             </e>
+            <e p="PostProcessing-Editor.asmdef" t="Include" />
             <e p="PostProcessingBehaviourEditor.cs" t="Include" />
             <e p="PostProcessingFactory.cs" t="Include" />
             <e p="PostProcessingInspector.cs" t="Include" />
@@ -423,6 +431,7 @@
               <e p="ReflectionUtils.cs" t="Include" />
             </e>
           </e>
+          <e p="PostProcessing.asmdef" t="Include" />
           <e p="Resources" t="Include">
             <e p="Bluenoise64" t="Include">
               <e p="COPYING.txt" t="Include" />
@@ -554,6 +563,7 @@
               <e p="ScoreRecord.cs" t="Include" />
               <e p="UIScoreRecord.cs" t="Include" />
             </e>
+            <e p="Project.asmdef" t="Include" />
             <e p="Settings" t="Include">
               <e p="GameSettings.cs" t="Include" />
             </e>
@@ -639,6 +649,7 @@
               <e p="WaterHoseParticles.cs" t="Include" />
             </e>
           </e>
+          <e p="StandardAssets.asmdef" t="Include" />
           <e p="Utility" t="Include">
             <e p="AlphaButtonClickMask.cs" t="Include" />
           </e>
@@ -667,6 +678,7 @@
               <e p="IconPreview.cs" t="Include" />
             </e>
           </e>
+          <e p="ThirdParty.asmdef" t="Include" />
           <e p="UnityChan" t="Include">
             <e p="Models" t="Include">
               <e p="UnityChanShader" t="Include">

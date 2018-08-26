@@ -11,6 +11,8 @@ namespace WonderGame.UI.Game {
         [SerializeField] private InputField _nameInputField;
         [SerializeField] private GameState _gameState;
 
+        // mivel a játék SceneContextbe is betöltjük a HighScoresInstallert
+        // ezért az ott lévő osztályok is elérik a HighScoresControllert, Singleton osztályként
         [Inject] private readonly HighScoresController _highScoresController;
 
         private bool _isShown;

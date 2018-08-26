@@ -18,6 +18,8 @@ namespace WonderGame.HighScores {
             transform.SetParent(_parent, false);
         }
 
+        // factory osztály a példányosításhoz
+        // (hagyományos Instantiate() azért nem jó, mert akkor az [Inject] property-k nem kerülnek beállításra)
         [UsedImplicitly]
         public class Factory : PlaceholderFactory<Transform, ScoreRecord, UIScoreRecord> { }
     }
