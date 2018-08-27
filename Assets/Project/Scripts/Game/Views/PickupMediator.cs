@@ -8,9 +8,17 @@ namespace WonderGame.Game.Views {
         
         [Inject]
         public CollectPickupSignal CollectPickupSignal { get; set; }
+        
+        [Inject]
+        public RegisterPickupSignal RegisterPickupSignal { get; set; }
 
         public override void OnRegister() {
             Pickup.PickupCollectedSignal.AddListener(OnPickupCollected);
+            Pickup.RegisterPickupSignal.AddListener(OnRegisterPickup);
+        }
+
+        private void OnRegisterPickup() {
+            RegisterPickupSignal.Dispatch();
         }
 
         public override void OnRemove() {

@@ -5383,7 +5383,6 @@ GameObject:
   - component: {fileID: 1006501416}
   - component: {fileID: 1006501414}
   - component: {fileID: 1006501413}
-  - component: {fileID: 1006501412}
   - component: {fileID: 1006501411}
   - component: {fileID: 1006501415}
   - component: {fileID: 1006501419}
@@ -5491,19 +5490,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1006501412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114149550005727166, guid: 97b2d47da119e8f44bec5ba73a6b9574,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1006501410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a165e1cf22b8364db3e98a6c61649be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickupCount: 0
 --- !u!136 &1006501413
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7609,7 +7595,6 @@ MonoBehaviour:
   _tweenDurationSeconds: 0.5
   _scoreText: {fileID: 412048588}
   _nameInputField: {fileID: 182323322}
-  _gameState: {fileID: 1964344555}
 --- !u!1 &1438204820
 GameObject:
   m_ObjectHideFlags: 0
@@ -9798,6 +9783,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fa71aa78b67a9524096104f4283d3b82, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1942974723 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1792185790465938, guid: 2857233477c90734fb7f2438482ae685,
+    type: 2}
+  m_PrefabInternal: {fileID: 2034062478}
+--- !u!114 &1942974724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942974723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c884251ae3104c1cb3a41540c3603339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1950715702
 Prefab:
   m_ObjectHideFlags: 0
@@ -9975,8 +9976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05241ccb6ab1df0448660f9a7a654944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WinThreshold: 8
-  TimeSeconds: 0
 --- !u!1 &1975656179
 GameObject:
   m_ObjectHideFlags: 0
@@ -10595,7 +10594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dcd55f3ec7bcfe4cbfabb7883bd16e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameState: {fileID: 1964344555}
   _text: {fileID: 2097983472}
 --- !u!1 &2103495976
 GameObject:

@@ -1,12 +1,13 @@
 ﻿using System.Threading.Tasks;
 using DG.Tweening;
+using strange.extensions.mediation.impl;
 using UnityEngine;
 
 namespace WonderGame.UI.Common {
-    public class UIWindow : MonoBehaviour {
+    public class UIWindow : View {
         [SerializeField] private float _tweenDurationSeconds;
 
-        private void Start() {
+        protected override void Start() {
             transform.localScale = Vector3.zero;    // kezdetben scale 0
         }
 

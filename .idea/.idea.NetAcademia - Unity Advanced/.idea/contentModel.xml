@@ -167,11 +167,12 @@
               <e p="Controller" t="Include">
                 <e p="CatchPlayerCommand.cs" t="Include" />
                 <e p="CollectPickupCommand.cs" t="Include" />
+                <e p="RegisterPickupCommand.cs" t="Include" />
+                <e p="RegisterPlayerHighScoreCommand.cs" t="Include" />
                 <e p="StartCommand.cs" t="Include" />
               </e>
               <e p="GameContext.cs" t="Include" />
               <e p="GameRoot.cs" t="Include" />
-              <e p="GameState.cs" t="Include" />
               <e p="Models" t="Include">
                 <e p="GameState.cs" t="Include" />
                 <e p="PlayerInventory.cs" t="Include" />
@@ -181,11 +182,19 @@
                 <e p="CollectPickupSignal.cs" t="Include" />
                 <e p="MoveUpdateSignal.cs" t="Include" />
                 <e p="PlayerLostSignal.cs" t="Include" />
+                <e p="PlayerNameSubmittedSignal.cs" t="Include" />
+                <e p="PlayerScoreChangedSignal.cs" t="Include" />
                 <e p="PlayerWonSignal.cs" t="Include" />
+                <e p="RegisterPickupSignal.cs" t="Include" />
                 <e p="StartSignal.cs" t="Include" />
               </e>
-              <e p="UIGameOver.cs" t="Include" />
-              <e p="UIPoints.cs" t="Include" />
+              <e p="UI" t="Include">
+                <e p="EnterNameUIWindow.cs" t="Include" />
+                <e p="EnterNameUIWindowMediator.cs" t="Include" />
+                <e p="UIPoints.cs" t="Include" />
+                <e p="UIPointsMediator.cs" t="Include" />
+                <e p="UITimer.cs" t="Include" />
+              </e>
               <e p="Views" t="Include">
                 <e p="CameraFollow.cs" t="Include" />
                 <e p="Character" t="Include">
@@ -232,10 +241,8 @@
               </e>
               <e p="Game" t="Include">
                 <e p="ContinueGameButton.cs" t="Include" />
-                <e p="EnterNameUIWindow.cs" t="Include" />
                 <e p="GameUIController.cs" t="Include" />
                 <e p="UISubmitButton.cs" t="Include" />
-                <e p="UITimer.cs" t="Include" />
               </e>
               <e p="HighScores" t="Include">
                 <e p="HighScoresUIController.cs" t="Include" />
@@ -544,7 +551,9 @@
       <e p="NetAcademia - Unity Advanced.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>

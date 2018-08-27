@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using WonderGame.Game.UI;
 using WonderGame.UI.Common;
 
 namespace WonderGame.UI.Game {
