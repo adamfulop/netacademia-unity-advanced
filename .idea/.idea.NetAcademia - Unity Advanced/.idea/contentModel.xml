@@ -6,6 +6,7 @@
     <e p="C:\Users\Adam\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Adam\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_NetAcademia - Unity Advanced.-2005490750.00" t="ExcludeRecursive" />
     <e p="D:\Dev\Unity\NetAcademia - Unity Advanced" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -280,6 +281,45 @@
               <e p="Util" t="Include">
                 <e p="TestButtonHandler.cs" t="Include" />
               </e>
+            </e>
+          </e>
+          <e p="UDP" t="Include">
+            <e p="UdpSupport" t="Include">
+              <e p="SampleScene" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="GameManager.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="UnityChannel" t="Include">
+            <e p="XiaomiSupport" t="Include">
+              <e p="AppStoreSettings.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="AppStoreModel.cs" t="Include" />
+                <e p="AppStoreOnboardApi.cs" t="Include" />
+                <e p="AppStoreSettingsEditor.cs" t="Include" />
+                <e p="XiaomiPackageNameExtension.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="UnityPurchasing" t="Include">
+            <e p="Editor" t="Include">
+              <e p="IAPButtonEditor.cs" t="Include" />
+            </e>
+            <e p="script" t="Include">
+              <e p="CodelessIAPStoreListener.cs" t="Include" />
+              <e p="ComboBox.cs" t="Include" />
+              <e p="Demo" t="Include">
+                <e p="DemoInventory.cs" t="Include" />
+              </e>
+              <e p="IAPButton.cs" t="Include" />
+              <e p="IAPConfigurationHelper.cs" t="Include" />
+              <e p="IAPDemo.cs" t="Include" />
+              <e p="IAPDemoProductUI.cs" t="Include" />
+              <e p="IAPListener.cs" t="Include" />
+              <e p="link.xml" t="Include" />
+              <e p="PurchasingCheck.cs" t="Include" />
             </e>
           </e>
           <e p="Zenject" t="Include">
@@ -823,6 +863,7 @@
               <e p="EnemyMove.cs" t="Include" />
               <e p="GameState.cs" t="Include" />
               <e p="GraphicsController.cs" t="Include" />
+              <e p="NetworkMove.cs" t="Include" />
               <e p="Pickup.cs" t="Include" />
               <e p="PlayerController.cs" t="Include" />
               <e p="PlayerInventory.cs" t="Include" />
@@ -864,11 +905,13 @@
               <e p="Game" t="Include">
                 <e p="ContinueGameButton.cs" t="Include" />
                 <e p="EnterNameUIWindow.cs" t="Include" />
+                <e p="GameAnalytics.cs" t="Include" />
                 <e p="GameUIController.cs" t="Include" />
                 <e p="UISubmitButton.cs" t="Include" />
                 <e p="UITimer.cs" t="Include" />
               </e>
               <e p="MainMenu" t="Include">
+                <e p="MainMenuAd.cs" t="Include" />
                 <e p="MainMenuController.cs" t="Include" />
                 <e p="MainMenuState.cs" t="Include" />
               </e>

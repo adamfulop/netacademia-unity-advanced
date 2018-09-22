@@ -2372,6 +2372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210916208}
   - component: {fileID: 1210916209}
+  - component: {fileID: 1210916210}
   m_Layer: 0
   m_Name: Network
   m_TagString: Untagged
@@ -2414,6 +2415,23 @@ MonoBehaviour:
   maxCachedMessages: 8
   maxCachedSocketAsyncEventArgs: 32
   maxCachedActionDispatcherTasks: 16
+--- !u!114 &1210916210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210916207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 1210916209}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &1213607599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +3238,46 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 940d55d4117386f4f9398ea3ff52d4cd, type: 2}
   m_PrefabInternal: {fileID: 1607864790}
+--- !u!1 &1611028018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1611028020}
+  - component: {fileID: 1611028019}
+  m_Layer: 0
+  m_Name: Analytics
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1611028019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611028018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2417533fa732437e9497a5af3648f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1611028020
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611028018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1636979242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,6 +3307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _virtualCamera: {fileID: 1600565103}
   _playerPrefab: {fileID: 1302224880009708, guid: 97b2d47da119e8f44bec5ba73a6b9574,
+    type: 2}
+  _otherPlayerPrefab: {fileID: 1302224880009708, guid: 1665c6b45536ce149aef701ffb01eb36,
     type: 2}
 --- !u!4 &1636979244
 Transform:

@@ -633,6 +633,8 @@ GameObject:
   - component: {fileID: 136890469595117130}
   - component: {fileID: 114149550005727166}
   - component: {fileID: 82766767686944190}
+  - component: {fileID: 114636542073914284}
+  - component: {fileID: 114931124025872850}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -5178,6 +5180,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickupCount: 0
+--- !u!114 &114636542073914284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302224880009708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab45a9977cff47feb2b8d331d802d379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveDeltaThreshold: 0.1
+--- !u!114 &114931124025872850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302224880009708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 2
 --- !u!136 &136890469595117130
 CapsuleCollider:
   m_ObjectHideFlags: 1
